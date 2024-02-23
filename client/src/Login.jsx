@@ -33,10 +33,17 @@ function Login() {
 <div class=" text-center bg-reg"  >
   <div class="row bg-register">
  <div class="col-md-4 col-sm-0">
+  <div style={{marginTop:'30%', marginLeft:'20%', marginRight:'20%'}}>
 
-    </div>
+ <p>
+"Welcome to ResaleApp - the ultimate platform for buying and selling pre-loved items!
+ Whether you're looking to declutter your space or snag a great deal,
+  ResaleApp has you covered. Here's what sets us apart:</p>
+  </div>
+         </div>
     <div class="col-md-4 col-sm-12">
-        <form onSubmit={handleSubmit} className='form-control register-form'>
+
+          <form onSubmit={handleSubmit} className='form-control register-form'>
         <h6 className='heading-text' > - RESALE - <span> </span></h6>
         <div>
             <label class="form-label" >Email:</label>
