@@ -21,7 +21,7 @@ function App() {
     <Route path='/createproduct' element={<Createproduct />}></Route>
     <Route path='/registeruser' element={<Registeruser />}></Route>
     <Route path='/login' element={<Login />}></Route>
-    <Route path='/homepage' element={<Homepage />}></Route>
+    <Route path='/' element={<Homepage />}></Route>
     <Route path="/details/:_id"  element={<DetailsPage />} />
    </Routes>
    </BrowserRouter>

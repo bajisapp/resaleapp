@@ -80,7 +80,7 @@ function Createproduct() {
                           .then(result => {
                               console.log(result);
                               alert('Submitted Successfully');
-                              navigate('/homepage');
+                              navigate('/');
                           })
                           .catch(err => console.log(err));
                   };

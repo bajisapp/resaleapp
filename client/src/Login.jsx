@@ -17,7 +17,7 @@ function Login() {
       if(result.data === "Success")
      {
       localStorage.setItem("userEmail", email);
-      navigate('/homepage')
+      navigate('/')
      }
      else
      {
