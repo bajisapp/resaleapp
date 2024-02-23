@@ -37,7 +37,7 @@ function Login() {
     </div>
     <div class="col-md-4 col-sm-12">
         <form onSubmit={handleSubmit} className='form-control register-form'>
-        <h6 className='heading-text' >RESALE <span> </span></h6>
+        <h6 className='heading-text' > - RESALE - <span> </span></h6>
         <div>
             <label class="form-label" >Email:</label>
             <input type='text ' class="form-control"  onChange={(e) => setEmail(e.target.value)} />

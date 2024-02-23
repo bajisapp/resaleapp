@@ -102,7 +102,7 @@ useEffect(() => {
                <img src={`http://localhost:3016/public/Images/` + product.imagename } class="card-img-top card-bimg"  alt="..." />
                <h6 class="card-title">{product.productname}</h6>               
               <div> <span>{product.productcategory}</span> </div>
-               <span class='productprice' style={{    color: '#F44336'}}>Price: {product.productprice}</span>
+               <span class='productprice' style={{    color: '#F44336'}}>Price -: {product.productprice}</span>
           
                 <span style={{display:'none'}}>{product.status}</span>
                 <p class="card-text">{product.descrption}</p>
@@ -110,9 +110,10 @@ useEffect(() => {
                 <span>Condition: {product.condition}</span>
               <div>  <span>Meet-up: {product.meetup}</span> </div>
 
-              <div>  <span style={{}} >Location : {product.location}</span></div>
-              
+              <div>  <span style={{}} >Location: {product.location}</span></div>
+
                   <div>   
+
                   <Link to={`/details/${product._id}`} className="btn btn-success btn-sm">   View details
                   </Link>           
                   </div>

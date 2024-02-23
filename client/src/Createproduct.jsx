@@ -116,7 +116,7 @@ function Createproduct() {
     <div class="col-md-8 col-sm-8">
     <h6>Welcome, {userEmail}!</h6>
       <form onSubmit={Submit} class="row g-3">
-      <h6 className='heading-text' ><span>What are you lising today? </span></h6>
+      <h6 className='heading-text' ><span>What are you lising today ? </span></h6>
       <div class="row">
       <div class="col-md-6">
         <input type='file' onChange={ e  => setFile(e.target.files[0])}/>

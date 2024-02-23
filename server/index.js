@@ -87,7 +87,7 @@ app.get("/getprods", (req, res) => {
     .catch(err => res.json(err))
 })
 
-// Update your route to handle product details based on the product ID
+// to handle product details based on the product ID
 app.get("/getprods/:_id", (req, res) => {
     const productId = req.params._id;
     productmodel.findById(productId)

@@ -33,13 +33,12 @@ function DetailsPage() {
           
 
                <div style={{border:'1px solid #ddd', padding:'20px;'}}>
-                 <p><b>Description: </b><br></br>{product.itemdetails}</p>
+                 <p><b>Description: - </b><br></br>{product.itemdetails}</p>
                 </div>
                 <span>Condition: {product.condition}</span>
                 <div>  <span style={{}} >Location : {product.location}</span></div>
               <div>  <span>Meet-up: {product.meetup}</span> </div>
-
-            
+           
                   <div>    
                   <div>
                     <Link className="" to='/homepage'><span style={{color:'#434040', textDecoration:'uderline'}}>Home</span> </Link> </div>
