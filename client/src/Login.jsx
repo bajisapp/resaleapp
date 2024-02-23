@@ -23,7 +23,6 @@ function Login() {
      {
       navigate('/registeruser')
      }
-   // navigate('/homepage')
 })
     .catch(err => console.log(err))
  }
@@ -49,6 +48,7 @@ function Login() {
             <label class="form-label" >Email:</label>
             <input type='text ' class="form-control"  onChange={(e) => setEmail(e.target.value)} />
         </div>        
+
         <div>
             <label class="form-label" >Password:</label>
             <input type='text ' class="form-control" placeholder='**** ****' onChange={(e) => setPasssword(e.target.value)} />
