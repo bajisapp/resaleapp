@@ -12,7 +12,7 @@ function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:3016/login", {email, password})
+    axios.post("https://resaleapi.onrender.com/login", {email, password})
     .then(result => {console.log(result)
       if(result.data === "Success")
      {

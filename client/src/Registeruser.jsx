@@ -32,7 +32,7 @@ function Registeruser() {
     alert('Email cannot be empty');
     return;
   }
-                        axios.post("http://localhost:3016/createUser", {email, mobile, password, username,  location})
+                        axios.post("https://resaleapi.onrender.com/createUser", {email, mobile, password, username,  location})
                         .then(result => {console.log(result)
                         navigate('/homepage')
                     })

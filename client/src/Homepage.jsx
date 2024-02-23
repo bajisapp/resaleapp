@@ -10,13 +10,13 @@ function Homepage() {
 
 
 useEffect(() => {
-  axios.get('http://localhost:3016/getUser')
+  axios.get('https://resaleapi.onrender.com/getUser')
   .then(result => setUsers(result.data))
   .catch(err => console.log(err))
 })
 
 useEffect(() => {
-  axios.get('http://localhost:3016/getprods')
+  axios.get('https://resaleapi.onrender.com/getprods')
   .then(products => setProducts(products.data))
   .catch(err => console.log(err))
 })
@@ -99,7 +99,7 @@ useEffect(() => {
 
                
                <div class="card-body">
-               <img src={`http://localhost:3016/public/Images/` + product.imagename } class="card-img-top card-bimg"  alt="..." />
+               <img src={`https://resaleapi.onrender.com/public/Images/` + product.imagename } class="card-img-top card-bimg"  alt="..." />
                <h6 class="card-title">{product.productname}</h6>               
               <div> <span>{product.productcategory}</span> </div>
                <span class='productprice' style={{    color: '#F44336'}}>Price -: {product.productprice}</span>

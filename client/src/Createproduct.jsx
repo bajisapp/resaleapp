@@ -76,7 +76,7 @@ function Createproduct() {
                       formData.append('condition', condition);
                       formData.append('meetup', meetup);
                   
-                      axios.post("http://localhost:3016/createProduct", formData)
+                      axios.post("https://resaleapi.onrender.com/createProduct", formData)
                           .then(result => {
                               console.log(result);
                               alert('Submitted Successfully');
@@ -103,7 +103,7 @@ function Createproduct() {
                       //  console.log(file);
                       const formatdata = new FormData()
                          formatdata.append('file', file)
-                         axios.post('http://localhost:3016/upload', formatdata )
+                         axios.post('https://resaleapi.onrender.com/upload', formatdata )
                          .then(res => console.log(res))
                          .catch(err => console.log(err))
                       }

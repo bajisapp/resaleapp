@@ -11,7 +11,7 @@ function DetailsPage() {
     useEffect(() => {
      // const _id = match.params._id;
 
-      axios.get(`http://localhost:3016/getprods/${_id}`)
+      axios.get(`https://resaleapi.onrender.com/getprods/${_id}`)
           .then(response => setProduct(response.data))
           .catch(err => console.log(err));
   }, [_id]);
@@ -26,7 +26,7 @@ function DetailsPage() {
 
 {product && (
                 <div>
-           <img src={`http://localhost:3016/public/Images/` + product.imagename } class="card-img-top card-dimg"  alt="..." />
+           <img src={`https://resaleapi.onrender.com/public/Images/` + product.imagename } class="card-img-top card-dimg"  alt="..." />
                <h6 class="card-title">{product.productname}</h6>               
               <div> <span>{product.productcategory}</span> </div>
                <span class='' style={{    }}> <b style={{color: '#F44336'}}>Price: {product.productprice} </b> | Status : {product.status}</span> 
